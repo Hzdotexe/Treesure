@@ -1,0 +1,38 @@
+<div class="home-login">
+  <p style="font-size: 25px; color: white; font-weight: bold">Log in</p>
+  <br />
+  <span class="p-float-label">
+    <input
+      id="float-input"
+      type="username"
+      [formControl]="userNameFC"
+      pInputText
+    />
+    <label for="float-input">Username</label>
+  </span>
+  <br />
+  <span class="p-float-label">
+    <input
+      id="float-input"
+      type="password"
+      [formControl]="passwordFC"
+      pInputText
+    />
+    <label for="float-input">Password</label>
+  </span>
+</div>
+<div class="center">
+  <button
+    pButton
+    pRipple
+    type="button"
+    label="Log in"
+    class="p-button-raised p-button-success"
+    (click)="checkUser()"
+  ></button>
+</div>
+<br />
+<small style="color: white">{{ userConnected }}</small>
+
+<input type="checkbox" [(ngModel)]="estCoche" (click)="confirmCheck()" />
+<app-dialog #dialog (confirmChecked)="onConfirmChecked($event)"></app-dialog>

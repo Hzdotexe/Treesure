@@ -1,0 +1,25 @@
+<p-dialog
+  header="Header"
+  [(visible)]="displayModal"
+  [modal]="true"
+  [style]="{ width: '50vw' }"
+  [baseZIndex]="10000"
+  [draggable]="false"
+  [resizable]="false"
+>
+  <p class="p-m-0">Voulez-vous vraiment décoché cet case?</p>
+  <ng-template pTemplate="footer">
+    <p-button
+      icon="pi pi-check"
+      (click)="yes()"
+      label="Yes"
+      styleClass="p-button-text"
+    ></p-button>
+    <p-button
+      icon="pi pi-times"
+      (click)="no()"
+      label="Non"
+      styleClass="p-button-text"
+    ></p-button>
+  </ng-template>
+</p-dialog>

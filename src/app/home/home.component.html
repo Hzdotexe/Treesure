@@ -1,0 +1,64 @@
+<header>
+  <div class="center">
+    <p class="textWhite">Welcome to</p>
+    <h1 class="bignumbers">TREESURE</h1>
+  </div>
+</header>
+<body>
+  <div class="center">
+    <img src="" width="300" height="300" />
+  </div>
+  <div class="center">
+    <button
+      pButton
+      pRipple
+      type="button"
+      label="Live Chart"
+      class="p-button-raised p-button-success"
+      (click)="pooCoinWebsite()"
+    ></button>
+  </div>
+  <p-divider></p-divider>
+  <div class="row-alt text-center">
+    <div class="container-fluid">
+      <div class="row medium-row align-items-lg-center">
+        <div class="available-on">
+          <a class="d-inline-block m-3" [href]="bscscanToken" target="_blank"
+            ><img
+              src="https://synthtiger.space/wp-content/uploads/2021/04/bscscan-logo-light.png"
+              width="150"
+              height="40"
+          /></a>
+          <a class="d-inline-block m-3" [href]="pancakeToken" target="_blank"
+            ><img
+              src="https://synthtiger.space/wp-content/uploads/2021/04/pancakeswap-cake-logo.png"
+              width="50"
+              height="50"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p-divider></p-divider>
+  <div class="center space-up-down textWhite">
+    <h3>The RoadMap</h3>
+  </div>
+  <div class="timeline">
+    <p-timeline [value]="timeline" align="alternate">
+      <ng-template pTemplate="marker" let-event>
+        <span
+          class="custom-marker p-shadow-2"
+          [style.backgroundColor]="event.color"
+        >
+        </span>
+      </ng-template>
+      <ng-template pTemplate="content" let-event>
+        <p-card [subheader]="event.date">
+          <p-card-content
+            ><strong>{{ event.content }}</strong></p-card-content
+          >
+        </p-card>
+      </ng-template>
+    </p-timeline>
+  </div>
+</body>
