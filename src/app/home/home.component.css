@@ -127,3 +127,7 @@ input:focus + label {
   width: fit-content;
   float: right;
 }
+
+section {
+  margin: 8px;
+}

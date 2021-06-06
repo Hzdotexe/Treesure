@@ -2,22 +2,20 @@
   <div class="center">
     <p class="textWhite">Welcome to</p>
     <h1 class="bignumbers">TREESURE</h1>
+    <img src="" width="300" height="300" />
+    <div style="margin-top: 25px;">
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Live Chart"
+        class="p-button-raised p-button-success"
+        (click)="pooCoinWebsite()"
+      ></button>
+    </div>
   </div>
 </header>
-<body>
-  <div class="center">
-    <img src="" width="300" height="300" />
-  </div>
-  <div class="center">
-    <button
-      pButton
-      pRipple
-      type="button"
-      label="Live Chart"
-      class="p-button-raised p-button-success"
-      (click)="pooCoinWebsite()"
-    ></button>
-  </div>
+<section>
   <p-divider></p-divider>
   <div class="row-alt text-center">
     <div class="container-fluid">
@@ -39,6 +37,8 @@
       </div>
     </div>
   </div>
+</section>
+<section class="roadmap">
   <p-divider></p-divider>
   <div class="center space-up-down textWhite">
     <h3>The RoadMap</h3>
@@ -61,4 +61,4 @@
       </ng-template>
     </p-timeline>
   </div>
-</body>
+</section>
