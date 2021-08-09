@@ -1,0 +1,26 @@
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div.home-login {
+  text-align: center;
+  margin-top: 50mm;
+}
+
+.p-float-label {
+  display: inline;
+}
+
+.p-float-label input {
+  margin-bottom: 30px;
+}
+
+input:focus + label {
+  top: -1.75rem;
+}
+
+div.center {
+  text-align: center;
+}
